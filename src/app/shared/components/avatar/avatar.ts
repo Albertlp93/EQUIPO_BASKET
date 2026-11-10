@@ -15,7 +15,7 @@ export class AvatarComponent implements OnChanges {
   @Input({ required: true }) alt = '';
   /** Tamaño del círculo. */
   @Input() size: 'md' | 'lg' = 'md';
-  /** Borde naranja (por ejemplo, jugador seleccionado). */
+  /** Borde de color de acento (por ejemplo, jugador seleccionado). */
   @Input() acento = false;
 
   imagenRota = false;

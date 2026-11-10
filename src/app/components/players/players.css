@@ -17,12 +17,12 @@
 /* Estado seleccionado */
 .eb-jugador--activo,
 .eb-jugador--activo:hover {
-  border-color: var(--eb-naranja);
-  background: var(--eb-naranja-fondo);
+  border-color: var(--eb-acento);
+  background: var(--eb-acento-fondo);
 }
 
 .eb-jugador__marca {
   font-size: 0.75rem;
   font-weight: 700;
-  color: var(--eb-naranja);
+  color: var(--eb-acento);
 }

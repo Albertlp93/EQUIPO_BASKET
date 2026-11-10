@@ -1,23 +1,28 @@
 /* Paleta, tipografía y medidas comunes de EQUIPO BASKET */
 :root {
-  /* Fondos (de más oscuro a más claro) */
-  --eb-fondo-pagina: #070b12;
-  --eb-fondo-header: #0d131c;
-  --eb-fondo-tarjeta: #0f1620;
-  --eb-fondo-elevado: #162130;
+  /* Fondos (tema claro) */
+  --eb-fondo-pagina: #f5f3fb;
+  --eb-fondo-tarjeta: #ffffff;
+  --eb-fondo-elevado: #eeeaf8;
+
+  /* Cabecera y pie (franja violeta oscura con texto claro) */
+  --eb-fondo-header: #2b1d5e;
+  --eb-header-texto: #ffffff;
+  --eb-header-texto-suave: #cfc6f0;
 
   /* Bordes */
-  --eb-borde: #1f2a38;
-  --eb-borde-fuerte: #2b394b;
+  --eb-borde: #ddd6f0;
+  --eb-borde-fuerte: #c4b9e6;
 
   /* Texto */
-  --eb-texto: #e8edf3;
-  --eb-texto-suave: #8d99a8;
+  --eb-texto: #1d1530;
+  --eb-texto-suave: #6b6385;
 
-  /* Acento */
-  --eb-naranja: #ff7a00;
-  --eb-naranja-oscuro: #e06a00;
-  --eb-naranja-fondo: rgba(255, 122, 0, 0.12);
+  /* Acento (violeta) y colores de acción */
+  --eb-acento: #6a3df0;
+  --eb-acento-rgb: 106, 61, 240;
+  --eb-acento-oscuro: #5229d6;
+  --eb-acento-fondo: rgba(106, 61, 240, 0.08);
   --eb-rojo: #e5383b;
   --eb-rojo-oscuro: #c22b2e;
   --eb-azul-electrico: #0066ff;
@@ -27,7 +32,8 @@
   --eb-fuente-titulo: 'Archivo Black', 'Arial Black', sans-serif;
   --eb-fuente-texto: 'Inter', system-ui, sans-serif;
 
-  /* Formas */
+  /* Formas y sombras */
+  --eb-sombra: 0 1px 3px rgba(29, 21, 48, 0.08);
   --eb-radio: 0.6rem;
   --eb-radio-grande: 0.9rem;
 
@@ -37,6 +43,6 @@
   --bs-body-font-family: var(--eb-fuente-texto);
   --bs-border-color: var(--eb-borde);
   --bs-secondary-color: var(--eb-texto-suave);
-  --bs-primary: var(--eb-naranja);
-  --bs-primary-rgb: 255, 122, 0;
+  --bs-primary: var(--eb-acento);
+  --bs-primary-rgb: var(--eb-acento-rgb);
 }

@@ -5,6 +5,7 @@
   background: var(--eb-fondo-tarjeta);
   border: 1px solid var(--eb-borde);
   border-radius: var(--eb-radio-grande);
+  box-shadow: var(--eb-sombra);
 }
 
 /* Botones */
@@ -36,12 +37,12 @@
 }
 
 .eb-btn--primario {
-  background: var(--eb-naranja);
+  background: var(--eb-acento);
   color: #fff;
 }
 
 .eb-btn--primario:hover:not(:disabled) {
-  background: var(--eb-naranja-oscuro);
+  background: var(--eb-acento-oscuro);
 }
 
 .eb-btn--borde {
@@ -85,7 +86,7 @@
   padding-right: 0;
 }
 
-/* Campos de formulario (Bootstrap en modo oscuro) */
+/* Campos de formulario (adaptados a la paleta) */
 .form-control,
 .form-select {
   background-color: var(--eb-fondo-tarjeta);
@@ -102,8 +103,8 @@
 .form-select:focus {
   background-color: var(--eb-fondo-tarjeta);
   color: var(--eb-texto);
-  border-color: var(--eb-naranja);
-  box-shadow: 0 0 0 0.15rem rgba(255, 122, 0, 0.25);
+  border-color: var(--eb-acento);
+  box-shadow: 0 0 0 0.15rem rgba(var(--eb-acento-rgb), 0.3);
 }
 
 .form-select option {
@@ -131,7 +132,7 @@
 }
 
 .eb-campo-icono:focus-within > .eb-icono {
-  color: var(--eb-naranja);
+  color: var(--eb-acento);
 }
 
 /* Barras deslizantes (progreso y volumen) */
